@@ -1,4 +1,5 @@
 module.exports = {
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 7, // ECMAScript版本，7为ES7
         "sourceType": "module", //默认script，如果代码是ECMAScript模块，设置为module
@@ -11,7 +12,7 @@ module.exports = {
     "env": {
         "es6": true,
         "node": true,
-        "browser": true,
+        "browser": true
     },
     // 脚本在执行期间访问的额外的全局变量
     // 避免访问未定义的环境变量而发出告警
@@ -23,7 +24,8 @@ module.exports = {
     },
     // 继承第三方校验规则eslint-config-airbnb
     // "extends": "airbnb",
-    // eslint-config-airbnb包括了以下3个插件
+    // // "extends": "eslint:recommended"
+    // // eslint-config-airbnb包括了以下3个插件
     // "plugins": [
     //     "react",
     //     "jsx-a11y",

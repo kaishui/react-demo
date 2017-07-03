@@ -4,7 +4,7 @@ import { addTodo } from '../actions'
 
 let AddTodo = ({ dispatch }) => {
     let input
-
+    console.log("AddTodo add todo", dispatch)
     return (
         <div>
             <form
