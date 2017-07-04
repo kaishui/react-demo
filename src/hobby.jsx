@@ -1,5 +1,7 @@
 // Hobby.jsx 爱好组件
-import React, { PropTypes } from 'react';
+import React from 'react';
+
+import PropTypes from "prop-types";
 
 const propTypes = {
     hobby: PropTypes.string.isRequired

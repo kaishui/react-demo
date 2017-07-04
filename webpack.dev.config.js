@@ -8,6 +8,12 @@ const ROOT_PATH = path.resolve(__dirname);
 const SRC_PATH = path.resolve(ROOT_PATH, 'src');
 const devConfig = merge(baseConfig, {
     devtool: 'eval-source-map',
+    watch: true,
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000,
+        ignored: /node_modules/
+    },
     plugins: [
         new webpack.DefinePlugin({
             'process.env.API_ENV': '"development"'

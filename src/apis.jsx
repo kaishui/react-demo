@@ -1,10 +1,10 @@
-import host from './host'
+import host from "./host";
 
-function getApi (api) {
+function getApi(api) {
     return host + api
 }
 
 export default {
     login: getApi('/login'),
-    logout: getApi('/logout'),
+    logout: getApi('/logout')
 }
