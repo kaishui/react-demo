@@ -41,8 +41,8 @@ class Profile extends React.Component {
     render() {
         return (
             <div className="profile-component">
-                <h1>我的名字叫{this.props.name}</h1>
-                <h2>我今年{this.props.age}岁</h2>
+                <h1>name: {this.props.name}</h1>
+                <h2>aa:{this.props.age}</h2>
                 <button onClick={this.likedCallback}>点赞</button>
                 <div>{this.state.liked}</div>
                 <ul>

@@ -5,7 +5,6 @@ const ROOT_PATH = path.resolve(__dirname);
 const SRC_PATH = path.resolve(ROOT_PATH, 'src');
 const BUILD_PATH = path.resolve(ROOT_PATH, 'dist');
 
-
 module.exports = {
     entry: 'multi-entry-loader?include=src/**/*.jsx!',
     output: {
@@ -33,7 +32,7 @@ module.exports = {
     plugins: [
         new webpack.DllReferencePlugin({
             manifest: require(path.resolve(ROOT_PATH, 'lib', 'manifest.json')),
-            context: ROOT_PATH,
+            context: ROOT_PATH
         })
     ]
 };
